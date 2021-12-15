@@ -15,7 +15,8 @@
     "start": "CHOKIDAR_USEPOLLING=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --fix --ext .js,.jsx ."
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
@@ -40,7 +41,8 @@
       "prettier/prettier": [
         "error",
         {
-          "singleQuote": true
+          "singleQuote": true,
+          "endOfLine":"auto"
         }
       ]
     },
